@@ -37,3 +37,56 @@ main{
     justify-content: left;
 
 }
+
+#scorecontainer{
+background-color: gold;
+color: lavender;
+font-family: 'Times New Roman', Times, serif;
+width: 325px;
+height: 175px;
+padding:10px;
+margin:30px;
+font-weight: bold;
+}
+
+#winsandlosses {
+    background-color:palevioletred;
+    color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    width: 175px;
+    height: 175px;
+    padding:10px;
+    margin:30px;
+    font-weight: bold;
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#totalscore {
+    background-color: paleturquoise;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    width: 325px;
+    height: 45px;
+    padding:10px;
+    margin:30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;  
+    text-size-adjust: 28%;
+    text-align: left;
+}
+
+#scorecontainer2 {
+    background-color:blanchedalmond;
+    color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    width: 325px;
+    height: 175px;
+    padding:10px;
+    margin:30px;
+    font-weight: bold;
+    text-size-adjust: 25%;  
+}
