@@ -1,0 +1,39 @@
+h1 {
+    font-weight: bolder;
+    text-size-adjust: x-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; 
+    border-style: solid;
+    border-color: burlywood;
+    background-color:burlywood;
+    padding: 10px;
+    margin: 10px;
+    align-items: stretch; 
+    width: 45%;
+}
+
+body {
+    background-image: url("../images/jade.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+main{
+    background-color: burlywood;
+    color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    width: 400px;
+    height: 350px;
+    padding: 10px;
+    margin: 30px;
+    font-weight: bold
+
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+
+}
