@@ -1,66 +1,123 @@
 // generate a random number at start 
 
-// random number for start of game should  be from 19-120
-// r=crystal have hidden value from 1-12. 
+// crytal variables // 
+var gems = {
+    Gem1:
+    {
+        name: "gem1",
+        value: 0
+    },
+    Gem2:
+    {
+        name: "gem2",
+        value: 0
+    },
+    Gem3:
+    {
+        name: "gem3",
+        value: 0
+    },
+    Gem4:
+    {
+        name: "gem4",
+        value: 0
 
-*// var randNumb = Math.floor(Math.random() * 120) + 19;
-    //console.log(randNumb)
-    // functions are mini programs mini snips of 
-    //  code within the code, a function will only run once
-    //  it's called. 
+    },
+};
 
-    // declaring the click counter put it at the top of 
-    the script or outside of it // 
+// current score / target score 
+var currentScore = 0;
+var targetScore = 0;
 
-// on.click function for buttons(gems)- jquery - 
-click count needs to fire off the
+// win and loss variables 
+var winCount = 0;
+var lossCount = 0;
 
-    ** what is it going
-to do once its clicked ?**
 
-    everytime gem is clicked{
-    make something that stores the click count
+
+// Functions 
+var getRandom = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-everytime its clicked add to the value {
-    where would you declare this and how would
-    I change it inside the Counter
+var startGame = function () {
+
+    // reset the current score 
+    var currentScore = 0;
+    // set a new large score between 19 and 120
+
+    targetScore = getRandom(19, 120);
+
+    // set diff values for each of the crystal between 1 and 12
+
+    gems.Gem1.value = getRandom(1, 12);
+    gems.Gem2.value = getRandom(1, 12);
+    gems.Gem3.value = getRandom(1, 12);
+    gems.Gem4.value = getRandom(1, 12);
+
+
+    $("#yourScore").html(currentScore);
+    $("#targetScore").html(targetScore);
+
+
+
+
+
+
+    console.log("------------------");
+    console.log("Target Score: " + targetScore);
+    console.log("Gem1: " + gems.Gem1.value + " | Gem2: " + gems.Gem2.value + " | Gem3: " + gems.Gem3.value + " | Gem4: " + gems.Gem4.value);
+    console.log("---------------------");
 }
 
-jquery how to hide elements  {
-    hide the amount until player clicks a gem.
+var addValues = function (gems) {
+
+    currentScore = currentScore + gems.value;
+
+    $("#yourScore").html(currentScore);
+
+    checkWin();
+
+    console.log("Your Score:" + currentScore);
 }
 
-when they do click the gem{
-    update the players score counter
+var checkWin = function () {
+
+    if (currentScore > targetScore) {
+        alert("You lost!");
+        console.log("You lost");
+    }
+
+    else if (currentScore == targetScore) {
+        alert("Congrats, YOU WON!");
+        console.log("YOU WON!");
+    }
 }
 
-Player wins if their total score matches random number{
-    from the beginning of game, make a trigger to let
-        game know once it has reached that # that they won
-}
-
-else player loses if their score goes above {
-    the random number
-}
 
 
 
-reset function {
-    if and when player wins or loses
-}
 
-Game begins again player sees new random # {
-    all the crystals will then have 4 new hidden
-    values
 
-}
+// jquery functions // 
+startGame();
 
-users score  and score counter{
-    will reset to zero. 
-}
+$("#gem1").click(function () {
+    addValues(gems.gem1);
+});
 
-let app show # of games the player w/l {
-do not refresh page to restart game.
-}
+$("#gem2").click(function () {
+    addValues(gems.gem2);
+});
+
+$("#gem3").click(function () {
+    addValues(gems.gem3);
+});
+
+$("#gem4").click(function () {
+    addValues(gems.gem4);
+
+
+});
+
 

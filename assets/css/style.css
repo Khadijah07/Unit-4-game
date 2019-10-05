@@ -38,7 +38,7 @@ main{
 
 }
 
-#scorecontainer{
+#targetScore{
 background-color: gold;
 color: lavender;
 font-family: 'Times New Roman', Times, serif;
@@ -78,8 +78,7 @@ font-weight: bold;
     text-size-adjust: 28%;
     text-align: left;
 }
-
-#scorecontainer2 {
+#yourScore {
     background-color:blanchedalmond;
     color: lavender;
     font-family: 'Times New Roman', Times, serif;
@@ -123,4 +122,10 @@ font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+#winsandlosses {
+display: flex;
+justify-content: left;
+
 }

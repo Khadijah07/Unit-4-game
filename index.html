@@ -17,18 +17,27 @@
     <div class="container">
 
         <main>
+
+
             You will be given a random number at the start of the game.
             <br>
+
             There are four crystals below.By clciking on a crystal you
             will add a specific amount of points to your total score.
+
             <br>
+
             You win the game by matching your total score to random number
             , you lose the game if your total score goes above the random
             number.
+
             <br>
-            The value of each crystal is hidden from you until you clcik on
+
+            The value of each crystal is hidden from you until you click on
             it.
+
             <br>
+
             Each time when the game starts, the game will change the values
             of each crystal.
             <br>
@@ -36,7 +45,7 @@
 
         </main>
 
-        <div id="scorecontainer">
+        <div id="targetScore">
             <p> 0</p>
         </div>
 
@@ -52,7 +61,7 @@
 
             <div id=gem1>
 
-                <img src="./assets/images/crystal-icon-0.jpg" width="125" height="125">
+                <img src="./assets/images/crystal-icon-0.jpg" width="125" height="125" alt="" id="red">
 
             </div>
             <div id=gem2>
@@ -76,12 +85,13 @@
             <p>Your total score is:</p>
         </div>
 
-        <div id="scorecontainer2">
+        <div id="yourScore">
             <p> 0</p>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
 <script src="assets/javascript/jquery-js.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 
 </html>
