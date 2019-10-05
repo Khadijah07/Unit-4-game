@@ -49,7 +49,7 @@ margin:30px;
 font-weight: bold;
 }
 
-#winsandlosses {
+#winCount {
     background-color:palevioletred;
     color: lavender;
     font-family: 'Times New Roman', Times, serif;
@@ -63,6 +63,24 @@ font-weight: bold;
     justify-content: flex-end;
     
 }
+
+#lossCount {
+    background-color: blueviolet;
+    color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    width: 175px;
+    height: 175px;
+    padding:10px;
+    margin:30px;
+    font-weight: bold;
+    align-self: stretch;
+    display: row;
+    justify-content: row;
+
+    
+}
+
+
 
 #totalscore {
     background-color: paleturquoise;
@@ -79,7 +97,7 @@ font-weight: bold;
     text-align: left;
 }
 #yourScore {
-    background-color:blanchedalmond;
+    background-color: goldenrod;
     color: lavender;
     font-family: 'Times New Roman', Times, serif;
     width: 325px;
@@ -124,8 +142,14 @@ font-weight: bold;
     justify-content: space-evenly;
 }
 
-#winsandlosses {
+#winCount {
 display: flex;
 justify-content: left;
 
 }
+#lossCount {
+    display: flex;
+    justify-content: left;
+    
+    }
+
