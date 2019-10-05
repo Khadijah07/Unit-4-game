@@ -1,5 +1,5 @@
 // generate a random number at start 
-
+alert("LETS PLAY CRYSTAL COLLECTORS!");
 // crytal variables // 
 var gems = {
     Gem1:
@@ -43,7 +43,7 @@ var getRandom = function (min, max) {
 var startGame = function () {
 
     // reset the current score 
-    var currentScore = 0;
+    currentScore = 0;
     // set a new large score between 19 and 120
 
     targetScore = getRandom(19, 120);
@@ -89,6 +89,8 @@ var checkWin = function () {
 
         lossCount++;
         $("#lossCount").html(lossCount);
+
+        startGame();
     }
 
     else if (currentScore == targetScore) {
@@ -97,6 +99,8 @@ var checkWin = function () {
 
         winCount++;
         $("#winCount").html(winCount);
+
+        startGame()
     }
 }
 
