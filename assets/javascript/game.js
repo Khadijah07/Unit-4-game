@@ -86,11 +86,17 @@ var checkWin = function () {
     if (currentScore > targetScore) {
         alert("You lost!");
         console.log("You lost");
+
+        lossCount++;
+        $("#lossCount").html(lossCount);
     }
 
     else if (currentScore == targetScore) {
         alert("Congrats, YOU WON!");
         console.log("YOU WON!");
+
+        winCount++;
+        $("#winCount").html(winCount);
     }
 }
 
@@ -103,19 +109,19 @@ var checkWin = function () {
 startGame();
 
 $("#gem1").click(function () {
-    addValues(gems.gem1);
+    addValues(gems.Gem1);
 });
 
 $("#gem2").click(function () {
-    addValues(gems.gem2);
+    addValues(gems.Gem2);
 });
 
 $("#gem3").click(function () {
-    addValues(gems.gem3);
+    addValues(gems.Gem3);
 });
 
 $("#gem4").click(function () {
-    addValues(gems.gem4);
+    addValues(gems.Gem4);
 
 
 });
