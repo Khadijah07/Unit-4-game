@@ -35,9 +35,9 @@ The app should show the number of games the player wins and loses. To that end, 
 
 Technologies used:
 
-HTML 
-JQUERY
-JAVASCRIPT
-CSS
+-HTML 
+-JQUERY
+-JAVASCRIPT
+-CSS
 
 Link to deployed assignment: https://khadijah07.github.io/Unit-4-game/.
