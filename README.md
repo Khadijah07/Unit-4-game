@@ -33,4 +33,4 @@ When the game begins again, the player should see a new random number. Also, all
 The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 
 
-Link to deployed assignment:
+Link to deployed assignment: https://khadijah07.github.io/Unit-4-game/.
